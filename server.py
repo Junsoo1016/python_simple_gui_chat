@@ -13,3 +13,10 @@ server.listen()
 client = []
 nicknames = []
 
+#broadcast
+def broadcast(message):
+    for client in clients:
+        client.send(message)
+#receive
+
+#handle
